@@ -24,17 +24,6 @@
 | Backend  | [Express.js](https://github.com/expressjs/express), [TypeScript](https://github.com/microsoft/typescript), [PostgreSQL](https://github.com/postgres/postgres), [Prisma](https://github.com/prisma/prisma) |
 | Tests    | [Jest](https://github.com/jestjs/jest), [Playwright](https://github.com/microsoft/playwright), [React Testing Library](https://github.com/testing-library/react-testing-library)                          |
 
-## Задачи
-
-- [ ] Домен
-- [ ] Бэкенд
-- [ ] Документация
-- [ ] Модульный тесты
-- [ ] CI/CD пайплайны
-- [ ] Избавиться от хардкода
-- [ ] Построение маршрутов на базе OSRM
-- [ ] Поддержка других языков _(Английский и Китайский)_
-
 ## Лицензия
 
 - Исходный код данного проекта — [MIT](LICENSE-MIT)
