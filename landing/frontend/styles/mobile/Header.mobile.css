@@ -1,0 +1,49 @@
+/* Laptop */
+@media (max-width: 1400px) {
+    header.navmenu {
+        margin-top: 15px;
+    }
+
+    header.navmenu > div.container {
+        padding: 0 24px;
+        border: 1px solid transparent;
+    }
+
+    header.navmenu#sticky {
+        padding: 0 15px;
+    }
+
+    header.navmenu > div.container > nav.buttons {
+        display: none;
+    }
+
+    .mobile-navmenu {
+        position: absolute;
+    }
+
+    header.navmenu > div.container > nav.commands > button.mobile-menu {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1300px) {
+    div.mobile-navmenu > div.container {
+        width: 50%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    div.mobile-navmenu > div.container {
+        width: 65%;
+    }
+}
+
+/* Small-screen device */
+@media (max-width: 650px) {
+    div.mobile-navmenu > div.container {
+        width: 100%;
+        border-radius: 0;
+    }
+}
