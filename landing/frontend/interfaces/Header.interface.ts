@@ -66,9 +66,8 @@ export const languages: LanguageKeys = {
 
 export function useSticky() {
     const ref = useRef<HTMLDivElement>(null)
-
     const [isSticky, setIsSticky] = useState(false)
-
+    
     useEffect(() => {
         if (!ref.current) {
             return
