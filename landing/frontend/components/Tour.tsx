@@ -1,23 +1,28 @@
-import "../styles/Tour.css"
+import '../styles/Sections.css'
 
-import tour from "../images/tour.jpg"
+import tour from '../images/tour.jpg'
 
-export default function Tour() {
-  return (
-    <section id="tour">
-      <div className="container">
-        <img src={tour} alt="" id="anim-element" className="img-left"/>
-        <div className="info">
-          <h1 id="anim-element">Ваш гид по городу</h1>
-          <p id="anim-element" className="anim-right">
-            Позвольте себе изучать город не по списку, а как близкого человека. 
-            <br /><br />
-            Ваш цифровой спутник поможет услышать его рассказы: от неторопливых историй, которые тихо рассказывают фасады старых зданий, до ярких, страстных спектаклей в его дворцах культуры.
-            <br /><br />            
-            Вы сможете прикоснуться к его мудрости в тишине музейных залов и понять его характер на оживлённых, солнечных улицах и в уютных парках - там, где жизнь города течёт неспешно и открывается для личного диалога с каждым прохожим.
-          </p>
-        </div>
-      </div>
-    </section>
-  );
-};
+export default function Tour(): React.ReactNode {
+    return (
+        <section id="chapter">
+            <div className="container">
+                <img src={tour} alt="" id="anim-element" className="img-left" />
+                <div className="info">
+                    <h1 id="anim-element">Ваш гид по городу</h1>
+                    <p id="anim-element" className="anim-right">
+                        Позвольте себе изучать город не по списку, а как близкого человека.
+                        <br />
+                        <br />
+                        Ваш цифровой спутник поможет услышать его рассказы: от неторопливых историй, которые тихо
+                        рассказывают фасады старых зданий, до ярких, страстных спектаклей в его дворцах культуры.
+                        <br />
+                        <br />
+                        Вы сможете прикоснуться к его мудрости в тишине музейных залов и понять его характер на
+                        оживлённых, солнечных улицах и в уютных парках - там, где жизнь города течёт неспешно и
+                        открывается для личного диалога с каждым прохожим.
+                    </p>
+                </div>
+            </div>
+        </section>
+    )
+}

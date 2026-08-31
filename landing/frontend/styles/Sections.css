@@ -1,0 +1,46 @@
+main#app > section#chapter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main#app > section#chapter > div.container {
+    height: 100%;
+    width: 1300px;
+    padding: 100px 0;
+    display: grid;
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main#app > section#chapter > div.container > .info {
+    perspective: 100px;
+
+    h1 {
+        color: var(--title);
+        font-size: 44px;
+    }
+
+    p {
+        color: var(--text);
+        text-align: justify;
+        padding: 1.25em 0;
+        font-size: 18px;
+    }
+}
+
+main#app > section#chapter > div.container > img {
+    background-image: repeating-linear-gradient(
+        45deg,
+        var(--image-empty-line-1),
+        var(--image-empty-line-1) 10px,
+        var(--image-empty-line-2) 11px,
+        var(--image-empty-line-2) 20px
+    );
+    border: 1px solid var(--image-empty-line-1);
+    border-radius: 25px;
+    height: 500px;
+    width: 50%;
+    object-fit: cover;
+}

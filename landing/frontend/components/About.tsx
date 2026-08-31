@@ -1,27 +1,30 @@
-import "../styles/About.css";
+import '../styles/Sections.css'
 
-import about from "../images/about.jpg"
+import about from '../images/about.jpg'
 
-export default function About() {
-  return (
-    <section id="about">
-      <div className="container">
-        <div className="info">
-          <h1 id="anim-element">Сквозь время</h1>
-          <p id="anim-element" className="anim-left">
-            Челябинск начинался не с камня, а с гарнизона - в 1736 году на 
-            этом месте заложили крепость, чтобы защищать Оренбургский тракт. 
-            <br /><br />
-            Здесь не строили дворцов, здесь ковали характер: город, который стал "воротами в Сибирь", 
-            а в XX веке - танкоградом, давшим фронту треть всех "тридцатьчетверок".
-            <br /><br />
-            Наш проект - приглашение увидеть город иным. Пройти не просто по проспектам, 
-            а сквозь эпохи: от купеческих особняков и водонапорной башни, пережившей пожар 1918 года, 
-            до бетонных цехов ЧТЗ, где ковалась Победа, и современного стрит-арта на стенах бывших заводов.
-          </p>
-        </div>
-        <img src={about} alt="" id="anim-element" className="img-right"/>
-      </div>
-    </section>
-  );
-};
+export default function About(): React.ReactNode {
+    return (
+        <section id="chapter">
+            <div className="container">
+                <div className="info">
+                    <h1 id="anim-element">Сквозь время</h1>
+                    <p id="anim-element" className="anim-left">
+                        Челябинск начинался не с камня, а с гарнизона - в 1736 году на этом месте заложили крепость,
+                        чтобы защищать Оренбургский тракт.
+                        <br />
+                        <br />
+                        Здесь не строили дворцов, здесь ковали характер: город, который стал &ldquo;воротами в
+                        Сибирь&ldquo;, а в XX веке - танкоградом, давшим фронту треть всех
+                        &ldquo;тридцатьчетверок&ldquo;.
+                        <br />
+                        <br />
+                        Наш проект - приглашение увидеть город иным. Пройти не просто по проспектам, а сквозь эпохи: от
+                        купеческих особняков и водонапорной башни, пережившей пожар 1918 года, до бетонных цехов ЧТЗ,
+                        где ковалась Победа, и современного стрит-арта на стенах бывших заводов.
+                    </p>
+                </div>
+                <img src={about} alt="" id="anim-element" className="img-right" />
+            </div>
+        </section>
+    )
+}
