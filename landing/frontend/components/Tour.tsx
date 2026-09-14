@@ -1,12 +1,10 @@
-import '../styles/Sections.css'
-
 import tour from '../images/tour.jpg'
 
 export default function Tour(): React.ReactNode {
     return (
         <section id="chapter">
-            <div className="container">
-                <img src={tour} alt="" id="anim-element" className="img-left" />
+            <div className="container" id="reversed">
+                <img src={tour} id="anim-element" className="img-left" />
                 <div className="info">
                     <h1 id="anim-element">Ваш гид по городу</h1>
                     <p id="anim-element" className="anim-right">

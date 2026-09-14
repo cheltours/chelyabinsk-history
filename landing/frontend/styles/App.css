@@ -1,110 +1,154 @@
 :root {
-  --primary:#EB775E;
-  --bg:     #FFFFFF;
-  --bg-alt: #fbfcff;
-  --map-bg: #f5f7fc;
-  --title:  #1F2937;
-  --text:   #4B5563;
+    --animation-speed: 0.15s;
 
-  --button:       #F3F4F6;
-  --button-hover: #e1e4e9;
-  --shadow: rgba(0, 0, 0, .15) 0px 10px 24px;
+    --primary: #f28f52;
+    --bg: #f4edea;
+    --bg-alt: #ebe1dc;
 
-  /* Default colors */
-  --red:    #FF5A5A;
-  --green:  #78F58F;
-  --blue:   #57AEFF;
-  --yellow: #FFA657;
+    /* Typegraphy */
+    --font-title: 'Noto Serif', serif;
+    --font-text: 'Open Sans', sans-serif;
+
+    --title: #2a1f18;
+    --text: #4c4642;
+
+    /* UI Elements */
+    --borders: #ede8e2;
+    --button: #e8ddd8;
+    --button-hover: #dfd1cb;
+    --shadow: rgba(0, 0, 0, 0.15) 0px 10px 24px;
+
+    /* Default colors */
+    --red: #fe7070;
+    --green: #93fda6;
+    --blue: #70b9fe;
+    --yellow: #fcaf6b;
+
+    /* Footer social-media colors */
+    --github: #000000;
 }
 
-:root[theme="dark"] {
-  --primary:#FF9E89;
+:root[theme='dark'] {
+    --primary: #fca067;
 
-  --bg:     #35363C;
-  --bg-alt: #46464C;
-  --map-bg: #51535e;
-  --title:  #FFFFFF;
-  --text:   #d6d6dc;
+    --bg: #23242a;
+    --bg-alt: #46464c;
+    --map-bg: #51535e;
+    --title: #ffffff;
+    --text: #d6d6dc;
 
-  --button:       #44444b;
-  --button-hover: #58585e;
+    --button: #44444b;
+    --button-hover: #58585e;
 
-  /* Default colors */
-  --red:    #FF5A5A;
-  --green:  #78F58F;
-  --blue:   #57AEFF;
-  --yellow: #FFA657;
+    /* Default colors */
+    --red: #ff5a5a;
+    --green: #78f58f;
+    --blue: #57aeff;
+    --yellow: #ffa657;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  /* transition: .15s; */
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-  
-  /* Font */
-  line-height: 1.5;
-  font-variant: normal;
-  font-family: "Inter", sans-serif;
-} body {
-  background-color: var(--bg);
+    margin: 0;
+    padding: 0;
+    transition: var(--animation-speed);
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+    /* Font */
+    line-height: 1.5;
+    font-variant: normal;
+    font-family: 'Inter', sans-serif;
 }
 
-h1,h2,h3,h4 {
-  font-weight: 800;
+body {
+    background-color: var(--bg);
 }
 
-main.app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .container { width: 1000px; }
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 800;
+    font-family: 'Noto Serif', sans-serif;
+}
+
+p {
+    font-family: var(--text-font);
+}
+
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+main#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #anim-element {
-  transition: 1s;
-  transform: translateY(25px);
-  opacity: 0;
-} #anim-element.anim-visible {
-  opacity: 1;
-  transform: translateY(0px);
+    transition: 1s;
+    transform: translateY(25px);
+    opacity: 0;
+}
+
+#anim-element.anim-visible {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 p#anim-element.anim-left {
-  transition: 1.25s;
-  transform: translateX(-25px);
-  opacity: 0;
-} p#anim-element.anim-left.anim-visible {
-  opacity: 1;
-  transform: translateY(0px);
+    transition: 1.25s;
+    transform: translateX(-25px);
+    opacity: 0;
+}
+
+p#anim-element.anim-left.anim-visible {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 p#anim-element.anim-right {
-  transition: 1.25s;
-  transform: translateX(25px);
-  opacity: 0;
-} p#anim-element.anim-right.anim-visible {
-  opacity: 1;
-  transform: translateY(0px);
+    transition: 1.25s;
+    transform: translateX(25px);
+    opacity: 0;
+}
+
+p#anim-element.anim-right.anim-visible {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 img#anim-element.img-right {
-  transition: .75s;
-  opacity: 0;
-} img#anim-element.img-right.anim-visible {
-  transform: translateZ(0px);
-  opacity: 1;
+    transition: 0.75s;
+    opacity: 0;
+}
+
+img#anim-element.img-right.anim-visible {
+    transform: translateZ(0px);
+    opacity: 1;
 }
 
 img#anim-element.img-left {
-  transition: .75s;
-  opacity: 0;
-} img#anim-element.img-left.anim-visible {
-  transform: translateZ(0px);
-  opacity: 1;
+    transition: 0.75s;
+    opacity: 0;
 }
 
-button,article,a,select {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+img#anim-element.img-left.anim-visible {
+    transform: translateZ(0px);
+    opacity: 1;
 }
+
+button,
+article,
+a,
+select {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+

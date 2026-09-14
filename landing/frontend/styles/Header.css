@@ -7,7 +7,7 @@ header.navmenu {
     display: flex;
     position: sticky;
     justify-content: center;
-    margin-top: 25px;
+    margin: 25px 0;
 }
 
 header.navmenu > div.container {
@@ -174,14 +174,16 @@ div.mobile-navmenu {
 }
 
 div.mobile-navmenu > div.container {
-    width: 35%;
-    height: 100vh;
-    padding: 50px 50px;
-    border-radius: 50px 0 0 50px;
+    width: 30%;
+    height: calc(100% - 25px);
+    padding: 50px;
+    border-radius: 25px;
     background-color: var(--bg);
 
     display: flex;
+    margin: 15px;
     transition: 0.5s;
+    overflow-y: scroll;
     flex-direction: column;
     justify-content: space-between;
 }

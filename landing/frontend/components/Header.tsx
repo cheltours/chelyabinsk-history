@@ -1,12 +1,9 @@
-import '../styles/Header.css'
-import '../styles/mobile/Header.mobile.css'
-import { navmenu, languages, useSticky } from '../interfaces/Header.interface'
-
 import lightLogotype from '../images/light-logo.svg'
 import darkLogotype from '../images/dark-logo.svg'
 
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { navmenu, languages, useSticky } from '../interfaces/Header.interface'
 import { faBars, faMoon, faSun, faGlobe, faXmark } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header({
@@ -34,7 +31,11 @@ export default function Header({
                                     src={!getTheme() ? darkLogotype : lightLogotype}
                                     alt="logotype.svg"
                                 />
-                                <button onClick={() => setMobileMenu(false)}>
+                                <button
+                                    onClick={() => {
+                                        setMobileMenu(false)
+                                        document.body.style.overflowY = 'scroll'
+                                    }}>
                                     <span>
                                         <FontAwesomeIcon icon={faXmark} />
                                     </span>
@@ -130,7 +131,12 @@ export default function Header({
                         {Object.entries(navmenu).filter(
                             ([key, index]) => (key && index.href !== undefined) || (key && index.state !== undefined)
                         ).length > 0 && (
-                            <button className="mobile-menu" onClick={() => setMobileMenu(true)}>
+                            <button
+                                className="mobile-menu"
+                                onClick={() => {
+                                    setMobileMenu(true)
+                                    document.body.style.overflowY = 'hidden'
+                                }}>
                                 <span>
                                     <FontAwesomeIcon icon={faBars} />
                                 </span>

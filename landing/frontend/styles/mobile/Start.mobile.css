@@ -1,0 +1,74 @@
+@media (max-width: 1000px) {
+    section.start {
+        width: 100%;
+    }
+
+    section.start > h1#anim-element {
+        font-size: 32px;
+    }
+
+    section.start > p#anim-element {
+        padding: 15px 0 5px 0;
+        font-size: 16px;
+    }
+
+    section.start > div.places > div.container > article.card {
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    section.start > div.places > div.container {
+        align-items: start;
+        overflow-x: scroll;
+        justify-content: start;
+        flex-wrap: nowrap;
+        padding: 25px;
+    }
+
+    section.start > div.places > div.container#empty {
+        align-items: start;
+        overflow-x: scroll;
+        justify-content: start;
+        flex-wrap: nowrap;
+        padding: 25px;
+    }
+
+    article#empty {
+        width: 300px;
+        height: 300px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 775px) {
+    section.start > div.places > div.container > article.card {
+        width: 275px;
+    }
+
+    article#empty {
+        width: 275px;
+        height: 275px;
+    }
+}
+
+@media (max-width: 525px) {
+    section.start > div.places > div.container > article.card {
+        width: 250px;
+    }
+
+    article#empty {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 400px) {
+    section.start > div.places > div.container > article.card {
+        width: 200px;
+    }
+
+    article#empty {
+        width: 200px;
+        height: 200px;
+    }
+}

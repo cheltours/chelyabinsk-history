@@ -1,7 +1,8 @@
 /* Laptop */
+
 @media (max-width: 1400px) {
     header.navmenu {
-        margin-top: 15px;
+        margin: 15px 0;
     }
 
     header.navmenu > div.container {
@@ -27,23 +28,43 @@
 }
 
 /* Tablet */
+
 @media (max-width: 1300px) {
     div.mobile-navmenu > div.container {
-        width: 50%;
+        width: 35%;
+    }
+}
+
+@media (max-width: 1100px) {
+    div.mobile-navmenu > div.container {
+        width: 40%;
     }
 }
 
 /* Mobile */
 @media (max-width: 900px) {
     div.mobile-navmenu > div.container {
-        width: 65%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 700px) {
+    div.mobile-navmenu > div.container {
+        width: 60%;
     }
 }
 
 /* Small-screen device */
 @media (max-width: 650px) {
+    header.navmenu {
+        margin: 0;
+        position: fixed;
+    }
+
     div.mobile-navmenu > div.container {
         width: 100%;
+        margin: 0;
+        height: 100vh;
         border-radius: 0;
     }
 }

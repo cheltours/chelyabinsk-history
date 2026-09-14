@@ -1,118 +1,125 @@
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: var(--bg-alt);
-  section.footer-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--bg-alt);
+}
+
+footer > section.container {
     gap: 32px;
     display: grid;
     width: 100%;
     max-width: 1300px;
     padding: 50px 25px 100px 25px;
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+}
 
-    .footer-app-authors {
-      font-size: 16px;
-      color: var(--text);
+footer > section.container > .footer-app-authors {
+    font-size: 16px;
+    color: var(--text);
+}
 
-      .footer-app-social {
-        gap: 6px;
-        display: flex;
-        margin-top: 20px;
-        a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
+footer > section.container > .footer-app-authors > .footer-app-social {
+    gap: 6px;
+    display: flex;
+    margin-top: 20px;
+}
 
-          width: 35px;
-          height: 35px;
-          font-size: 20px;
-          border-radius: 10px;
-          color: var(--text);
-          background-color: var(--button);
-          border: 1px solid var(--button-hover);
-        } a:hover {
-          color: var(--title);
-          background-color: var(--button-hover);
-        }
-      }
+footer > section.container > .footer-app-authors > .footer-app-social > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    }
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: var(--text);
+    background-color: var(--bg);
+    border: 1px solid var(--button-hover);
+}
 
-    .footer-block {
-      h1 {
+footer > section.container > .footer-app-authors > .footer-app-social > a:hover {
+    color: var(--title);
+    background-color: white;
+}
+
+footer > section.container > .footer-block {
+    h1 {
         font-size: 20px;
         font-weight: bold;
         color: var(--title);
         text-transform: capitalize;
-      }
+    }
+}
 
-      .footer-block-content  {
+footer > section.container > .footer-block > .footer-block-content {
+    gap: 6px;
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    font-weight: normal;
+
+    a {
         gap: 6px;
         display: flex;
-        margin-top: 10px;
-        flex-direction: column;
-        font-weight: normal;
+        font-size: 16px;
+        transition: none;
+        color: var(--text);
+        text-decoration: none;
 
-        a {
-          gap: 6px;
-          display: flex;
-          font-size: 16px;
-          transition: none;
-          color: var(--text);
-          text-decoration: none;
-
-          span {
+        span {
             display: flex;
             align-items: center;
             justify-content: center;
-          }
         }
-        a:hover {
-          color: var(--primary);
-          text-decoration: underline;
-        }
-
-        p {
-          gap: 6px;
-          display: flex;
-          color: var(--text);
-          align-items: center;
-
-          span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-        }
-
-        button {
-          border: 0;
-          outline: none;
-          cursor: pointer;
-          font-size: 16px;
-          text-align: left;
-          transition: none;
-          color: var(--text);
-          background-color: transparent;
-        } button:hover {
-          color: var(--primary);
-          text-decoration: underline;
-        }
-      }
     }
 
-  }
+    a:hover {
+        color: var(--primary);
+        text-decoration: underline;
+    }
+
+    p {
+        gap: 6px;
+        display: flex;
+        color: var(--text);
+        align-items: center;
+
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    button {
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        font-size: 16px;
+        text-align: left;
+        transition: none;
+        color: var(--text);
+        background-color: transparent;
+    }
+
+    button:hover {
+        color: var(--primary);
+        text-decoration: underline;
+    }
 }
 
 @media (max-width: 643px) {
-  .footer-app-authors {
-    text-align: center
-  }
+    .footer-app-authors {
+        text-align: center;
+    }
 
-  .footer-app-social {
-    align-items: center;
-    justify-content: center;
-  }
+    .footer-app-social {
+        align-items: center;
+        justify-content: center;
+    }
 }
+

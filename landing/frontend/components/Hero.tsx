@@ -1,6 +1,3 @@
-import '../styles/Hero.css'
-import '../styles/mobile/Hero.mobile.css'
-
 import video from '../images/video.mp4'
 import poster from '../images/places/center.jpg'
 

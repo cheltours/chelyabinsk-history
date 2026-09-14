@@ -23,7 +23,7 @@ export default function About(): React.ReactNode {
                         где ковалась Победа, и современного стрит-арта на стенах бывших заводов.
                     </p>
                 </div>
-                <img src={about} alt="" id="anim-element" className="img-right" />
+                <img src={about} id="anim-element" className="img-right" />
             </div>
         </section>
     )

@@ -1,0 +1,83 @@
+/* Laptop */
+@media (max-width: 1300px) {
+    section.hero {
+        width: 100%;
+    }
+
+    section.hero > div.container > video#video,
+    img#poster {
+        border-radius: 0;
+    }
+
+    section.hero > div.container > nav {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    section.hero > div.container > nav {
+        gap: 12px;
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            width: 350px;
+            font-size: 18px;
+        }
+    }
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+    section.hero > div.container {
+        height: 100vh;
+        video#video,
+        img#poster,
+        nav {
+            height: 100vh;
+        }
+    }
+
+    section.hero > div.container > nav {
+        gap: 12px;
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            width: 350px;
+            font-size: 18px;
+        }
+    }
+}
+
+/* iPhone SE */
+@media (max-width: 400px) {
+    section.hero > div.container > nav {
+        gap: 12px;
+        h1 {
+            font-size: 40px;
+        }
+
+        p {
+            width: 350px;
+            font-size: 18px;
+        }
+    }
+}
+
+/* iPhone SE */
+@media (max-width: 370px) {
+    section.hero > div.container > nav {
+        gap: 12px;
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            width: 325px;
+            font-size: 16px;
+        }
+    }
+}
