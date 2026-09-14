@@ -1,4 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import Landing from './frontend/components/App.tsx'
 
-createRoot(document.getElementById('root')).render(<Landing />)
+const app: HTMLElement | null = document.getElementById('root')
+
+if (app) createRoot(app).render(<Landing />)
