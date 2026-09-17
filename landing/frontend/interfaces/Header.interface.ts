@@ -17,27 +17,27 @@ interface Navmenu {
 export const navmenu: Navmenu = {
     0: {
         title: 'Памятка туристу',
-        href: 'Hello',
+        href: '',
     },
 
     1: {
         title: 'достопримечательности',
-        href: 'Hello',
+        href: '',
     },
 
     2: {
         title: 'гастроном',
-        href: 'Hello',
+        href: '',
     },
 
     3: {
         title: 'Обратная связь',
-        href: 'Hello',
+        href: '',
     },
 
     4: {
         title: 'Контакты',
-        href: 'Hello',
+        href: '',
     },
 }
 
@@ -46,22 +46,7 @@ export const languages: LanguageKeys = {
         language: 'Русский',
         key: 'ru',
         flag: RUSSIA_FLAG,
-    },
-    1: {
-        language: '中文',
-        key: 'zh',
-        flag: CHINE_FLAG,
-    },
-    2: {
-        language: 'English',
-        key: 'en',
-        flag: USA_FLAG,
-    },
-    3: {
-        language: 'Deutsch',
-        key: 'de',
-        flag: GERMANY_FLAG,
-    },
+    }
 }
 
 export function useSticky() {

@@ -2,20 +2,20 @@
     --animation-speed: 0.15s;
 
     --primary: #f28f52;
-    --bg: #f4edea;
-    --bg-alt: #ebe1dc;
+    --bg: #faf7f5;
+    --bg-alt: #f3ebe7;
 
     /* Typegraphy */
     --font-title: 'Noto Serif', serif;
     --font-text: 'Open Sans', sans-serif;
 
-    --title: #2a1f18;
-    --text: #4c4642;
+    --title: #382d27;
+    --text: #51443d;
 
     /* UI Elements */
     --borders: #ede8e2;
-    --button: #e8ddd8;
-    --button-hover: #dfd1cb;
+    --button: #f2ece9;
+    --button-hover: #e8ddd8;
     --shadow: rgba(0, 0, 0, 0.15) 0px 10px 24px;
 
     /* Default colors */
@@ -58,6 +58,11 @@
     line-height: 1.5;
     font-variant: normal;
     font-family: 'Inter', sans-serif;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
 }
 
 body {

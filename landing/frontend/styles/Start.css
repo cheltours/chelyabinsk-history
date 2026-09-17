@@ -46,7 +46,7 @@ section.start > div.places > .container > article.card {
     justify-content: space-between;
 }
 
-section.start > div.places > .container > article.card > img {
+section.start > div.places > .container > article.card > span.card-content > img {
     width: 100%;
     height: 150px;
     object-fit: cover;

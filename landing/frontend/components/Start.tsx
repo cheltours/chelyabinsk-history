@@ -20,10 +20,10 @@ export default function Start(): React.ReactNode {
                                         </div>
                                     </span>
 
-                                    <span className="card-tags">
+                                    {/* <span className="card-tags">
                                         <p>Музей</p>
                                         <p>Достопримечательность</p>
-                                    </span>
+                                    </span> */}
                                 </article>
                             ))}
                         </>

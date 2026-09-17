@@ -48,7 +48,7 @@ export default function Landing(): React.ReactNode {
             document.documentElement.lang = String(localStorage.getItem('lang'))
         }
 
-        const observer = new IntersectionObserver(
+        const observer: IntersectionObserver = new IntersectionObserver(
             (entries, observer) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
@@ -63,7 +63,6 @@ export default function Landing(): React.ReactNode {
         )
 
         document.querySelectorAll('#anim-element').forEach((el) => observer.observe(el))
-
         const link: HTMLLinkElement = document.querySelector("link[rel*='icon']") || document.createElement('link')
         if (link) {
             link.type = 'image/svg+xml'
