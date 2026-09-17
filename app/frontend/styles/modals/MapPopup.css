@@ -1,169 +1,195 @@
 .map-popup {
-  display: flex;
-  flex-direction: column;
-  .map-popup-image {
-    width: 100%;
-    height: 225px;
-    object-fit: cover;
-    border-radius: 24px 24px 0 0;
-  }
+    display: flex;
+    flex-direction: column;
 
-  span.map-popup-text {
-    width: 100%;
-    padding: 10px 15px;
-
-    h1,h2,h3,h4,h5,h6 {
-      color: var(--title);
-      font-weight: bold;
-      font-size: 22px;
-      padding: 10px 0 0 0;
+    .map-popup-image {
+        width: 100%;
+        height: 225px;
+        object-fit: cover;
+        padding: 10px;
+        border-radius: 25px;
     }
 
-    p {
-      font-size: 16px;
-      padding: 5px 0 5px 0;
-      color: var(--text);
-      font-weight: normal;
+    span.map-popup-text {
+        width: 100%;
+        padding: 5px 15px 10px;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--title);
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 16px;
+            padding: 5px 0 5px 0;
+            color: var(--text);
+            font-weight: normal;
+        }
+
+        .map-popup-info {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 0;
+
+            font-size: 16px;
+            color: var(--text);
+
+            p {
+                font-size: 1rem;
+                padding: 5.5px 0;
+                color: var(--text);
+                font-weight: normal;
+            }
+        }
+
+        nav.map-popup-actions {
+            gap: 6px;
+            display: flex;
+            padding: 10px 0px 5px 0;
+            flex-direction: column;
+
+            button {
+                border: 0;
+                padding: 15px;
+                outline: none;
+                cursor: pointer;
+                font-size: 16px;
+                transition: 0.25s;
+                color: var(--text);
+                border-radius: 10px;
+                background-color: var(--button);
+            }
+
+            button:hover {
+                color: var(--title);
+                background-color: var(--button-hover);
+            }
+
+            button.map-popup-actions-report[disabled] {
+                opacity: 0.75;
+                cursor: not-allowed;
+            }
+
+            button.map-popup-actions-report[disabled]:hover {
+                opacity: 0.75;
+                background-color: var(--text);
+            }
+
+            button.map-popup-actions-report {
+                gap: 6px;
+                display: flex;
+                color: var(--bg);
+                align-items: center;
+                justify-content: center;
+                background-color: var(--text);
+            }
+
+            button.map-popup-actions-report:hover {
+                background-color: var(--title);
+            }
+        }
     }
-
-    .map-popup-info {
-      display: flex;
-      flex-direction: column;
-      padding: 5px 0;
-
-      font-size: 16px;
-      color: var(--text);
-
-      p {
-        font-size: 1rem;
-        padding: 5.5px 0;
-        color: var(--text);
-        font-weight: normal;
-      }
-    }
-
-    nav.map-popup-actions {
-      gap: 6px;
-      display: flex;
-      padding: 10px 0px 5px 0;
-      flex-direction: column;
-      button {
-        border: 0;
-        padding: 15px;
-        outline: none;
-        cursor: pointer;
-        font-size: 16px;
-        transition: .25s;
-        color: var(--text);
-        border-radius: 10px;
-        background-color: var(--button);
-      } button:hover {
-        color: var(--title);
-        background-color: var(--button-hover);
-      }
-
-      button.map-popup-actions-report[disabled] {
-        opacity: .75;
-        cursor: not-allowed;
-      } button.map-popup-actions-report[disabled]:hover {
-        opacity: .75;
-        background-color: var(--text);
-      }
-
-      button.map-popup-actions-report {
-        gap: 6px;
-        display: flex;
-        color: var(--bg);
-        align-items: center;
-        justify-content: center;
-        background-color: var(--text);
-      } button.map-popup-actions-report:hover {
-        background-color: var(--title);
-      }
-    }
-  }
 }
 
 .maplibregl-popup {
-  max-width: 400px !important;
-  .maplibregl-popup-content {
-    box-shadow: none;
-    min-height: 300px;
-    border-radius: 25px;
-    background-color: var(--bg);
-    border: 1px solid var(--button);
+    max-width: 400px !important;
+    .maplibregl-popup-content {
+        box-shadow: none;
+        min-height: 300px;
+        border-radius: 25px;
+        background-color: var(--bg);
+        border: 1px solid var(--button);
 
-    padding: 0;
-    font-weight: normal;
-    box-shadow: var(--shadow);
-    button.maplibregl-popup-close-button {
-      color: white;
-      font-size: 14px;
-      text-align: center;
+        padding: 0;
+        font-weight: normal;
+        box-shadow: var(--shadow);
+        button.maplibregl-popup-close-button {
+            color: white;
+            font-size: 14px;
+            text-align: center;
 
-      border: 0;
-      width: 30px;
-      height: 30px;
-      margin: 10px;
-      outline: none;
-      transition: .15s;
-      border-radius: 50px;
-      border: 1px solid var(--primary);
-      background-color: var(--primary);
+            border: 0;
+            width: 30px;
+            height: 30px;
+            margin: 20px;
+            outline: none;
+            transition: 0.15s;
+            border-radius: 50px;
+            border: 1px solid var(--primary);
+            background-color: var(--primary);
+        }
     }
-  }
 }
 
 @media (max-width: 1250px) {
-  .map-popup {  
-    .map-popup-image {
-      height: 200px;
+    .map-popup {
+        .map-popup-image {
+            height: 200px;
+        }
+        span.map-popup-text {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+
+            .map-popup-info p {
+                font-size: 14px;
+            }
+
+            nav.map-popup-actions button {
+                font-size: 14px;
+            }
+        }
     }
-    span.map-popup-text { 
-      h1,h2,h3,h4,h5,h6 {
-        font-size: 18px;
-      } p {
-        font-size: 14px;
-      }
 
-      .map-popup-info p {
-        font-size: 14px;
-      }
-
-      nav.map-popup-actions button {
-        font-size: 14px;
-      }
+    .maplibregl-popup {
+        max-width: 350px !important;
     }
-  }
-
-  .maplibregl-popup {
-    max-width: 350px !important;
-  }
 }
 
 @media (max-width: 600px) {
-  .map-popup {  
-    .map-popup-image {
-      height: 150px;
+    .map-popup {
+        .map-popup-image {
+            height: 150px;
+        }
+        span.map-popup-text {
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 12px;
+            }
+
+            .map-popup-info p {
+                font-size: 12px;
+            }
+
+            nav.map-popup-actions button {
+                font-size: 12px;
+            }
+        }
     }
-    span.map-popup-text { 
-      h1,h2,h3,h4,h5,h6 {
-        font-size: 16px;
-      } p {
-        font-size: 12px;
-      }
 
-      .map-popup-info p {
-        font-size: 12px;
-      }
-
-      nav.map-popup-actions button {
-        font-size: 12px;
-      }
+    .maplibregl-popup {
+        max-width: 300px !important;
     }
-  }
-
-  .maplibregl-popup {
-    max-width: 300px !important;
-  }
 }
+
