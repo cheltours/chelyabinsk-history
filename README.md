@@ -6,7 +6,7 @@
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white&color=AF71EB)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-![Project-Status](https://img.shields.io/badge/status-mvp-%23007ACC.svg?style=for-the-badge&color=brown)
+![Project-Status](https://img.shields.io/badge/version-demo%20only-%23007ACC.svg?style=for-the-badge&color=brown)
 
 </div>
 
@@ -14,13 +14,15 @@
 
 Репозиторий представляет собой [лендинговую страницу](./landing/) и [основное приложение](./app/) проекта.
 
+> [!NOTE]  
+> Данная ветка имеет исключительно демостративную реализацию веб-приложения.
+
 ### Используемые технологии
 
-| Стек     | Инструменты                                                                                                                                                                                               |
-| -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Фронтенд | [React](https://github.com/facebook/react), [TypeScript](https://github.com/microsoft/typescript), [Vite](https://github.com/vitejs/vite)                                                                 |
-| Бэкенд  | [Express.js](https://github.com/expressjs/express), [TypeScript](https://github.com/microsoft/typescript), [PostgreSQL](https://github.com/postgres/postgres), [Prisma](https://github.com/prisma/prisma) |
-| Тесты    | [Jest](https://github.com/jestjs/jest), [Playwright](https://github.com/microsoft/playwright), [React Testing Library](https://github.com/testing-library/react-testing-library)                          |
+| Стек     | Инструменты                                                                                                                                                                      |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Фронтенд | [React](https://github.com/facebook/react), [TypeScript](https://github.com/microsoft/typescript), [Vite](https://github.com/vitejs/vite)                                        |
+| Тесты    | [Jest](https://github.com/jestjs/jest), [Playwright](https://github.com/microsoft/playwright), [React Testing Library](https://github.com/testing-library/react-testing-library) |
 
 ## Документация
 
