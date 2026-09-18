@@ -42,6 +42,7 @@ section.start > div.places > .container > article.card {
     border: 1px solid var(--button-hover);
 
     display: flex;
+    align-items: stretch;
     flex-direction: column;
     justify-content: space-between;
 }
