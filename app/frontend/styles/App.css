@@ -7,6 +7,9 @@
     --title: #382d27;
     --text: #51443d;
 
+    --font-title: 'Noto Serif', serif;
+    --font-text: 'Open Sans', sans-serif;
+
     --button: #f2ece9;
     --button-hover: #e8ddd8;
     --shadow: rgba(0, 0, 0, 0.125) 0px 8px 24px;
@@ -61,6 +64,14 @@ body {
 ::selection {
     color: white;
     background-color: var(--primary);
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: var(--font-title) !important;
+}
+p {
+    font-family: var(--font-text) !important;
 }
 
 button,
